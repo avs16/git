@@ -1,0 +1,261 @@
+
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title> Upload details || Vysya Shadi</title>
+        
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    </head>
+    <body>
+      <div class="container">
+            <form method="POST" name="form" action="/submit" enctype="multipart/form-data">
+              <div class="form-row">
+                <!--
+                     <div class="form-group col-md-4">
+                     <label for="name">Name</label>
+                     <input type="text" autocomplete="off" class="form-control" name="name"  placeholder="Enter the name" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                     <label for="createdBy">Profile created by</label>
+                     <select class="form-control dropdown" id="createdBy" name="createdBy">
+                         <option value="self">Self</option>
+                         <option value="siblings">Siblings</option>
+                         <option value="parent">Parent</option>
+                         <option value="friend">Friend</option>
+                     </select>
+                    </div>
+                 </div>
+                 <div class="form-row">
+                 
+                    <div class="form-group col-md-4">
+                        <label for="gender">Gender</label>
+                        <select class="form-control dropdown" id="gender" name="gender">
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                        </select>
+
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="dob">Date of birth</label>
+                        <input type="date" autocomplete="off" id="dob"class="form-control" name="dob" required>
+
+                    </div>
+                   </div>
+              <div class="form-row">
+                  
+                <div class="form-group col-md-4">
+                    <label for="star">Star/Nakshathra</label>
+                    <select class="form-control dropdown" id="star" name="star"> 
+                        <option value="Ashwini">Ashwini</option>
+                        <option value="Bharani">Bharani</option>
+                        <option value="Krittika">Krittika</option>
+                        <option value="Rohini">Rohini</option>
+                        <option value="Mrigashirsha">Mrigashirsha</option>
+                        <option value="Ardra">Ardra/Thiruvathirai</option>
+                        <option value="Punarvasu">Punarvasu</option>
+                        <option value="Pushya">Pushya</option>
+                        <option value="Ayilum">Ashlesha/Ayilum</option>
+                        <option value="Magha">Magha</option>
+                        <option value="Pooram">Purva Phalguni/Pooram</option>
+                        <option value="Uthram">Uttara Phalguni/Uthram</option>
+                        <option value="Hasta">Hasta</option>
+                        <option value="Chitra">Chitra</option>
+                        <option value="Swati">Swati</option>
+                        <option value="Vishakha">Vishakha</option>
+                        <option value="Anusham">Anuradha/Anusham</option>
+                        <option value="Kaetai">Jyeshta/Kaetai</option>
+                        <option value="Mula">Mula</option>
+                        <option value="Pooradam">Purvashadha/Pooradam</option>
+                        <option value="Uttradam">Uttarashadha/Uttradam</option>
+                        <option value="Thiruvonam">Shravana/Thiruvonam</option>
+                        <option value="Avitam">Dhanistha/Avitam</option>
+                        <option value="Sadhayam">Shatabhishak/Sadhayam</option>
+                        <option value="Pooratadhi">Purva Bhadrapada/Pooratadhi</option>
+                        <option value="Uttratadhi">Uttara Bhadrapada/Uttratadhi</option>
+                        <option value="Revati">Revati</option>
+                    </select> 
+                    </div>
+
+                    <div class="form-group col-md-4">
+                    <label for="Zodiac">Zodiac/Raasi</label>
+                      <select class="form-control dropdown" id="zodiac" name="zodiac">  
+                          <option value="mesham"> Mesham</option>
+                          <option value="rishabam">Rishabam</option>
+                          <option value="midhunam">Midhunam</option>
+                          <option value="kadagam">Kadagam</option>
+                          <option value="simam">Simam</option>
+                          <option value="kanni">Kanni</option>
+                          <option value="tulam">Tulam</option>
+                          <option value="viruchagam">Viruchagam</option>
+                          <option value="dhanusu">Dhanusu</option>
+                          <option value="magaram">Magaram</option>
+                          <option value="kumbam">Kumbam</option>
+                          <option value="meenam">Meenam</option>
+            
+                        </select> 
+                    </div>
+             </div>
+                   
+                <div class="form-row">
+                 
+                   <div class="form-group col-md-4">
+                    <label for="Lagnam">Lagnam</label>
+                     <input type="text" autocomplete="off" id="lagnam"class="form-control"placeholder="Enter the lagnam" name="lagnam" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                        <label for="height"> Height (in feet)</label>
+                        <input type="text" autocomplete="off" id="height"class="form-control"placeholder="Enter the Height" name="height" required>
+                       </div>
+                  </div>
+                  <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="Gothram">Gothram</label>
+                    
+                    <select  id="gothram" name="gothram"  class="form-control dropdown">
+                    <option value="Abimanchikula">Abimanchikula</option><option value="Akramulakula">Akramulakula</option><option value="Akyamulakula">Akyamulakula</option><option value="Amalakula">Amalakula</option><option value="Ananthakula">Ananthakula</option><option value="Anthirakula">Anthirakula</option><option value="Anubala">Anubala</option><option value="Anubala Gula">Anubala Gula</option><option value="Anubhagula">Anubhagula</option><option value="Anumarshanakula">Anumarshanakula</option><option value="Anusishta">Anusishta</option><option value="Anusishtakula">Anusishtakula</option><option value="Arasakula">Arasakula</option><option value="Arisetlakula">Arisetlakula</option><option value="Arisishtakula">Arisishtakula</option><option value="Arkyamula">Arkyamula</option><option value="Ayanakula">Ayanakula</option><option value="Balaseshta">Balaseshta</option><option value="Balasishta">Balasishta</option><option value="Balisishta">Balisishta</option><option value="Berisishtakula">Berisishtakula</option><option value="Bethakishta">Bethakishta</option><option value="Bethashreshta">Bethashreshta</option><option value="Bhdhanakula">Bhdhanakula</option><option value="Bheemasishta">Bheemasishta</option><option value="Bheemasishtakula">Bheemasishtakula</option><option value="Bheemasreshtakula">Bheemasreshtakula</option><option value="Bhudhikula">Bhudhikula</option><option value="Bhyrusishtakula">Bhyrusishtakula</option><option value="Brolekakula">Brolekakula</option><option value="Brosi">Brosi</option><option value="Brosishtakula">Brosishtakula</option><option value="Brumasishtakula">Brumasishtakula</option><option value="Bumsimamsukula">Bumsimamsukula</option><option value="Bumsimanakula">Bumsimanakula</option><option value="Burhtilasishakula">Burhtilasishakula</option><option value="Chaanakalakula">Chaanakalakula</option><option value="Chakramulakula">Chakramulakula</option><option value="Chakramulasakula">Chakramulasakula</option><option value="Chanda">Chanda</option><option value="Chandakakula">Chandakakula</option><option value="Chandhakula">Chandhakula</option><option value="Chandhigoseela">Chandhigoseela</option><option value="Chandrakula">Chandrakula</option><option value="Chandramasishta">Chandramasishta</option><option value="Chandramoola">Chandramoola</option><option value="Chankalakula">Chankalakula</option><option value="Chinthakula">Chinthakula</option><option value="Chinthala">Chinthala</option><option value="Chinthamasishta Chinthyakula">Chinthamasishta Chinthyakula</option><option value="Chownaka">Chownaka</option><option value="Chusalakula">Chusalakula</option><option value="Dankarakula">Dankarakula</option><option value="Dhanakula">Dhanakula</option><option value="Dhanthakula">Dhanthakula</option><option value="Dhasishtakula">Dhasishtakula</option><option value="Dhayaa Sishtakula">Dhayaa Sishtakula</option><option value="Dhayasishtakula">Dhayasishtakula</option><option value="Dhenthakula">Dhenthakula</option><option value="Dhesishtakula">Dhesishtakula</option><option value="Dhevisetla">Dhevisetla</option><option value="Dhodakula">Dhodakula</option><option value="Dhodilula">Dhodilula</option><option value="Dhonthakula">Dhonthakula</option><option value="Dhrugasishta">Dhrugasishta</option><option value="Dhrugasishtakula">Dhrugasishtakula</option><option value="Dhulaasishtakula">Dhulaasishtakula</option><option value="Dhulasikula">Dhulasikula</option><option value="Dhulasishtakula">Dhulasishtakula</option><option value="Dhurasishta">Dhurasishta</option><option value="Dhurasishtakula">Dhurasishtakula</option><option value="Dhurvadikula">Dhurvadikula</option><option value="Dhuryadakula">Dhuryadakula</option><option value="Dhuvvisishtakula">Dhuvvisishtakula</option><option value="Dhvanthakula">Dhvanthakula</option><option value="Dhyanthakula">Dhyanthakula</option><option value="Elisishtakula">Elisishtakula</option><option value="Esabakula">Esabakula</option><option value="Eshubakula">Eshubakula</option><option value="Esubakula">Esubakula</option><option value="Ganamukukula">Ganamukukula</option><option value="Ganthaseela">Ganthaseela</option><option value="Ganthaseelakula">Ganthaseelakula</option><option value="Ganthiseela">Ganthiseela</option><option value="Garnakula">Garnakula</option><option value="Gopakula">Gopakula</option><option value="Gorantakulu">Gorantakulu</option><option value="Goseela">Goseela</option><option value="Granthiseela">Granthiseela</option><option value="Haaraasikula">Haaraasikula</option><option value="Harisishtakula">Harisishtakula</option><option value="Hasthakula">Hasthakula</option><option value="Hasthikula">Hasthikula</option><option value="Helamanchikula">Helamanchikula</option><option value="Ilamanchikula">Ilamanchikula</option><option value="Ina">Ina</option><option value="Inakola">Inakola</option><option value="Inakula">Inakula</option><option value="Injthapakula">Injthapakula</option><option value="Ishvakukula">Ishvakukula</option><option value="Janakula">Janakula</option><option value="Jyanukula">Jyanukula</option><option value="Kamalakula">Kamalakula</option><option value="Kamasishta">Kamasishta</option><option value="Kamathenukula">Kamathenukula</option><option value="Kanalola">Kanalola</option><option value="Kanapakula">Kanapakula</option><option value="Kanasrila">Kanasrila</option><option value="Kanasrila Kula">Kanasrila Kula</option><option value="Kantaasukula">Kantaasukula</option><option value="Kantakula">Kantakula</option><option value="Kantasthulakula">Kantasthulakula</option><option value="Kantasuukula">Kantasuukula</option><option value="Kanukula">Kanukula</option><option value="Kanyakula">Kanyakula</option><option value="Kapata">Kapata</option><option value="Karakapala">Karakapala</option><option value="Komarsishtakula">Komarsishtakula</option><option value="Kondakakula">Kondakakula</option><option value="Kondakula">Kondakula</option><option value="Koratakula">Koratakula</option><option value="Kramashreshtakula">Kramashreshtakula</option><option value="Kramasishta">Kramasishta</option><option value="Kramasishtakula">Kramasishtakula</option><option value="Kranu">Kranu</option><option value="Kranukula">Kranukula</option><option value="Kumarsishta">Kumarsishta</option><option value="Kumirisishta">Kumirisishta</option><option value="Kundakakula">Kundakakula</option><option value="Kundakula">Kundakula</option><option value="Kurata">Kurata</option><option value="Lelisishtakula">Lelisishtakula</option><option value="Lenasishtakula">Lenasishtakula</option><option value="Lruththikula">Lruththikula</option><option value="Maanaachakula">Maanaachakula</option><option value="Maithrikulav">Maithrikulav</option><option value="Mandakula">Mandakula</option><option value="Mandhakula">Mandhakula</option><option value="Mandu">Mandu</option><option value="Manyukula">Manyukula</option><option value="Maraasakula">Maraasakula</option><option value="Masantha">Masantha</option><option value="Mathanakula">Mathanakula</option><option value="Maththikula">Maththikula</option><option value="Mathyakula">Mathyakula</option><option value="Mathyasakula">Mathyasakula</option><option value="Mithunakula">Mithunakula</option><option value="Monukula">Monukula</option><option value="Moolakula">Moolakula</option><option value="Morkkalakula">Morkkalakula</option><option value="Moruka">Moruka</option><option value="Morusa">Morusa</option><option value="Mounjikula">Mounjikula</option><option value="Mounjrisa">Mounjrisa</option><option value="Mrangamakula">Mrangamakula</option><option value="Munikula">Munikula</option><option value="Munjeekula">Munjeekula</option><option value="Muthukula">Muthukula</option><option value="Naabeelakula">Naabeelakula</option><option value="Naabeelasakula">Naabeelasakula</option><option value="Naabilla">Naabilla</option><option value="Padanasishtakula">Padanasishtakula</option><option value="Padinakula">Padinakula</option><option value="Padmashreshta">Padmashreshta</option><option value="Padmasishtakula">Padmasishtakula</option><option value="Padmasishtasa">Padmasishtasa</option><option value="Padugoseela">Padugoseela</option><option value="Paipikula">Paipikula</option><option value="Palakakula">Palakakula</option><option value="Palakalakula">Palakalakula</option><option value="Palakula">Palakula</option><option value="Pallalagooseela">Pallalagooseela</option><option value="Pampaalla">Pampaalla</option><option value="Pamthakula">Pamthakula</option><option value="Panchalakula">Panchalakula</option><option value="Panchallakula">Panchallakula</option><option value="Patakaseelakula">Patakaseelakula</option><option value="Pathasishtakula">Pathasishtakula</option><option value="Paththasishtakula">Paththasishtakula</option><option value="Pattugoseela">Pattugoseela</option><option value="Pendlikula">Pendlikula</option><option value="Perusishta">Perusishta</option><option value="Pippalakula">Pippalakula</option><option value="Plakakula">Plakakula</option><option value="Poulathathsya Kula">Poulathathsya Kula</option><option value="Praheenikula">Praheenikula</option><option value="Praheenukula">Praheenukula</option><option value="Prahtamakula">Prahtamakula</option><option value="Prana Seela Kula">Prana Seela Kula</option><option value="Pranaseelakula">Pranaseelakula</option><option value="Pranuseelakula">Pranuseelakula</option><option value="Pravathakula">Pravathakula</option><option value="Prodajakula">Prodajakula</option><option value="Prodayasakula">Prodayasakula</option><option value="Proudaayaja">Proudaayaja</option><option value="Pruthivisishta">Pruthivisishta</option><option value="Pruthivisreshta">Pruthivisreshta</option><option value="Puchakaseela">Puchakaseela</option><option value="Puchakula">Puchakula</option><option value="Punagorseela">Punagorseela</option><option value="Punagoseela">Punagoseela</option><option value="Punakaseelakula Bheemagoseela">Punakaseelakula Bheemagoseela</option>
+                        <option value="Puneethasa">Puneethasa</option><option value="Punitha">Punitha</option><option value="Punthakula">Punthakula</option><option value="Puppalakula">Puppalakula</option><option value="Puthuruksakula">Puthuruksakula</option><option value="Puthurukula">Puthurukula</option><option value="Ravisishtakula">Ravisishtakula</option><option value="Rendukula">Rendukula</option><option value="Rentakula">Rentakula</option><option value="Sakallakula">Sakallakula</option><option value="Samanakula">Samanakula</option><option value="Samasishtakula">Samasishtakula</option><option value="Sanakula">Sanakula</option><option value="Sanasishta">Sanasishta</option><option value="Sanasishtakula">Sanasishtakula</option><option value="Sandhoku">Sandhoku</option><option value="Sandhokulakula">Sandhokulakula</option><option value="Sanikthakula">Sanikthakula</option><option value="Sannakula">Sannakula</option><option value="Santhakula">Santhakula</option><option value="Santhanakula">Santhanakula</option><option value="Sarakula">Sarakula</option><option value="Sathyagoseela">Sathyagoseela</option><option value="Segolla">Segolla</option><option value="Sekotlakula">Sekotlakula</option><option value="Shanakula">Shanakula</option><option value="Shreshta Kundala Kula">Shreshta Kundala Kula</option><option value="Silakula">Silakula</option><option value="Sinishetla">Sinishetla</option><option value="Sirasishtakula">Sirasishtakula</option><option value="Sirisheshta">Sirisheshta</option><option value="Sirisheshtakula">Sirisheshtakula</option><option value="Sirisishtakula">Sirisishtakula</option><option value="Sishtasa">Sishtasa</option><option value="Sithruba">Sithruba</option><option value="Sithrubakula">Sithrubakula</option><option value="Sithrubellu">Sithrubellu</option><option value="Sithurubellu">Sithurubellu</option><option value="Soochalakula">Soochalakula</option><option value="Sookasallakula">Sookasallakula</option><option value="Sooryakula">Sooryakula</option><option value="Soosalakula">Soosalakula</option><option value="Sribhumsikula">Sribhumsikula</option><option value="Srigoseela">Srigoseela</option><option value="Srilakula">Srilakula</option><option value="Srirangakula">Srirangakula</option><option value="Srisalakula">Srisalakula</option><option value="Srisalla">Srisalla</option><option value="Srisallakula">Srisallakula</option><option value="Srishi">Srishi</option><option value="Suchalakula">Suchalakula</option><option value="Sugollakula">Sugollakula</option><option value="Sukalakula">Sukalakula</option><option value="Thaisettakula">Thaisettakula</option><option value="Thanaku">Thanaku</option><option value="Thananakula">Thananakula</option><option value="Thanathakula">Thanathakula</option><option value="Theeshmakula">Theeshmakula</option><option value="Theeshmashreshta">Theeshmashreshta</option><option value="Theeshmasishtakula">Theeshmasishtakula</option><option value="Thenthasala">Thenthasala</option><option value="Thenthsula">Thenthsula</option><option value="Thenukula">Thenukula</option><option value="Thesetlakula">Thesetlakula</option><option value="Thesishtakula">Thesishtakula</option><option value="Thethanakula">Thethanakula</option><option value="Thishamasishtakula">Thishamasishtakula</option><option value="Thithinakula">Thithinakula</option><option value="Thithisa">Thithisa</option><option value="Thondikula">Thondikula</option><option value="Thrimula">Thrimula</option><option value="Thrimulakula">Thrimulakula</option><option value="Thrivikrama">Thrivikrama</option><option value="Thrivikramasishtakula">Thrivikramasishtakula</option><option value="Thuppala">Thuppala</option><option value="Thuppalakula">Thuppalakula</option><option value="Thysishtakula">Thysishtakula</option><option value="Ubarisishta">Ubarisishta</option><option value="Udhvahakula">Udhvahakula</option><option value="Uhtamakula">Uhtamakula</option><option value="Upalakula">Upalakula</option><option value="Upamakula">Upamakula</option><option value="Upamanyakula">Upamanyakula</option><option value="Upanakula">Upanakula</option><option value="Uparakula">Uparakula</option><option value="Usirakula">Usirakula</option><option value="Uthakalakula">Uthakalakula</option><option value="Uthakula">Uthakula</option><option value="Uthamagoseela">Uthamagoseela</option><option value="Uthamaseela">Uthamaseela</option><option value="Uthasishtakula">Uthasishtakula</option><option value="Vaeligolla">Vaeligolla</option><option value="Vanisishtakula">Vanisishtakula</option><option value="Vasanthakula">Vasanthakula</option><option value="Vasntha">Vasntha</option><option value="Vasthi">Vasthi</option><option value="Vasthikula">Vasthikula</option><option value="Vasthisa">Vasthisa</option><option value="Vasthrikula">Vasthrikula</option><option value="Velasishtakula">Velasishtakula</option><option value="Velgolla">Velgolla</option><option value="Velisishtakula">Velisishtakula</option><option value="Venkalakula">Venkalakula</option><option value="Vennakula">Vennakula</option><option value="Vibarisishta">Vibarisishta</option><option value="Vikramasishta">Vikramasishta</option><option value="Vikramasishtakula">Vikramasishtakula</option><option value="Vinnakula">Vinnakula</option><option value="Vinnasa">Vinnasa</option><option value="Vinukula">Vinukula</option><option value="Vrahasishtakula">Vrahasishtakula</option><option value="Vrakalamula">Vrakalamula</option><option value="Vrangamakula">Vrangamakula</option><option value="Vrangamulakula">Vrangamulakula</option><option value="Vyalakoolasa">Vyalakoolasa</option><option value="Yaanasabikula">Yaanasabikula</option><option value="Yaanasakakula">Yaanasakakula</option><option value="Yalamanchikula">Yalamanchikula</option><option value="Yanasakula">Yanasakula</option><option value="Yelasishtakula">Yelasishtakula</option>
+                    		</select>    
+                </div>
+
+                   <div class="form-group col-md-4">
+                    <label for="gotharam1">Menamama gotharam</label>
+                    <select  id="mgothram" name="mgothram"  class="form-control dropdown">
+                        <option value="Abimanchikula">Abimanchikula</option><option value="Akramulakula">Akramulakula</option><option value="Akyamulakula">Akyamulakula</option><option value="Amalakula">Amalakula</option><option value="Ananthakula">Ananthakula</option><option value="Anthirakula">Anthirakula</option><option value="Anubala">Anubala</option><option value="Anubala Gula">Anubala Gula</option><option value="Anubhagula">Anubhagula</option><option value="Anumarshanakula">Anumarshanakula</option><option value="Anusishta">Anusishta</option><option value="Anusishtakula">Anusishtakula</option><option value="Arasakula">Arasakula</option><option value="Arisetlakula">Arisetlakula</option><option value="Arisishtakula">Arisishtakula</option><option value="Arkyamula">Arkyamula</option><option value="Ayanakula">Ayanakula</option><option value="Balaseshta">Balaseshta</option><option value="Balasishta">Balasishta</option><option value="Balisishta">Balisishta</option><option value="Berisishtakula">Berisishtakula</option><option value="Bethakishta">Bethakishta</option><option value="Bethashreshta">Bethashreshta</option><option value="Bhdhanakula">Bhdhanakula</option><option value="Bheemasishta">Bheemasishta</option><option value="Bheemasishtakula">Bheemasishtakula</option><option value="Bheemasreshtakula">Bheemasreshtakula</option><option value="Bhudhikula">Bhudhikula</option><option value="Bhyrusishtakula">Bhyrusishtakula</option><option value="Brolekakula">Brolekakula</option><option value="Brosi">Brosi</option><option value="Brosishtakula">Brosishtakula</option><option value="Brumasishtakula">Brumasishtakula</option><option value="Bumsimamsukula">Bumsimamsukula</option><option value="Bumsimanakula">Bumsimanakula</option><option value="Burhtilasishakula">Burhtilasishakula</option><option value="Chaanakalakula">Chaanakalakula</option><option value="Chakramulakula">Chakramulakula</option><option value="Chakramulasakula">Chakramulasakula</option><option value="Chanda">Chanda</option><option value="Chandakakula">Chandakakula</option><option value="Chandhakula">Chandhakula</option><option value="Chandhigoseela">Chandhigoseela</option><option value="Chandrakula">Chandrakula</option><option value="Chandramasishta">Chandramasishta</option><option value="Chandramoola">Chandramoola</option><option value="Chankalakula">Chankalakula</option><option value="Chinthakula">Chinthakula</option><option value="Chinthala">Chinthala</option><option value="Chinthamasishta Chinthyakula">Chinthamasishta Chinthyakula</option><option value="Chownaka">Chownaka</option><option value="Chusalakula">Chusalakula</option><option value="Dankarakula">Dankarakula</option><option value="Dhanakula">Dhanakula</option><option value="Dhanthakula">Dhanthakula</option><option value="Dhasishtakula">Dhasishtakula</option><option value="Dhayaa Sishtakula">Dhayaa Sishtakula</option><option value="Dhayasishtakula">Dhayasishtakula</option><option value="Dhenthakula">Dhenthakula</option><option value="Dhesishtakula">Dhesishtakula</option><option value="Dhevisetla">Dhevisetla</option><option value="Dhodakula">Dhodakula</option><option value="Dhodilula">Dhodilula</option><option value="Dhonthakula">Dhonthakula</option><option value="Dhrugasishta">Dhrugasishta</option><option value="Dhrugasishtakula">Dhrugasishtakula</option><option value="Dhulaasishtakula">Dhulaasishtakula</option><option value="Dhulasikula">Dhulasikula</option><option value="Dhulasishtakula">Dhulasishtakula</option><option value="Dhurasishta">Dhurasishta</option><option value="Dhurasishtakula">Dhurasishtakula</option><option value="Dhurvadikula">Dhurvadikula</option><option value="Dhuryadakula">Dhuryadakula</option><option value="Dhuvvisishtakula">Dhuvvisishtakula</option><option value="Dhvanthakula">Dhvanthakula</option><option value="Dhyanthakula">Dhyanthakula</option><option value="Elisishtakula">Elisishtakula</option><option value="Esabakula">Esabakula</option><option value="Eshubakula">Eshubakula</option><option value="Esubakula">Esubakula</option><option value="Ganamukukula">Ganamukukula</option><option value="Ganthaseela">Ganthaseela</option><option value="Ganthaseelakula">Ganthaseelakula</option><option value="Ganthiseela">Ganthiseela</option><option value="Garnakula">Garnakula</option><option value="Gopakula">Gopakula</option><option value="Gorantakulu">Gorantakulu</option><option value="Goseela">Goseela</option><option value="Granthiseela">Granthiseela</option><option value="Haaraasikula">Haaraasikula</option><option value="Harisishtakula">Harisishtakula</option><option value="Hasthakula">Hasthakula</option><option value="Hasthikula">Hasthikula</option><option value="Helamanchikula">Helamanchikula</option><option value="Ilamanchikula">Ilamanchikula</option><option value="Ina">Ina</option><option value="Inakola">Inakola</option><option value="Inakula">Inakula</option><option value="Injthapakula">Injthapakula</option><option value="Ishvakukula">Ishvakukula</option><option value="Janakula">Janakula</option><option value="Jyanukula">Jyanukula</option><option value="Kamalakula">Kamalakula</option><option value="Kamasishta">Kamasishta</option><option value="Kamathenukula">Kamathenukula</option><option value="Kanalola">Kanalola</option><option value="Kanapakula">Kanapakula</option><option value="Kanasrila">Kanasrila</option><option value="Kanasrila Kula">Kanasrila Kula</option><option value="Kantaasukula">Kantaasukula</option><option value="Kantakula">Kantakula</option><option value="Kantasthulakula">Kantasthulakula</option><option value="Kantasuukula">Kantasuukula</option><option value="Kanukula">Kanukula</option><option value="Kanyakula">Kanyakula</option><option value="Kapata">Kapata</option><option value="Karakapala">Karakapala</option><option value="Komarsishtakula">Komarsishtakula</option><option value="Kondakakula">Kondakakula</option><option value="Kondakula">Kondakula</option><option value="Koratakula">Koratakula</option><option value="Kramashreshtakula">Kramashreshtakula</option><option value="Kramasishta">Kramasishta</option><option value="Kramasishtakula">Kramasishtakula</option><option value="Kranu">Kranu</option><option value="Kranukula">Kranukula</option><option value="Kumarsishta">Kumarsishta</option><option value="Kumirisishta">Kumirisishta</option><option value="Kundakakula">Kundakakula</option><option value="Kundakula">Kundakula</option><option value="Kurata">Kurata</option><option value="Lelisishtakula">Lelisishtakula</option><option value="Lenasishtakula">Lenasishtakula</option><option value="Lruththikula">Lruththikula</option><option value="Maanaachakula">Maanaachakula</option><option value="Maithrikulav">Maithrikulav</option><option value="Mandakula">Mandakula</option><option value="Mandhakula">Mandhakula</option><option value="Mandu">Mandu</option><option value="Manyukula">Manyukula</option><option value="Maraasakula">Maraasakula</option><option value="Masantha">Masantha</option><option value="Mathanakula">Mathanakula</option><option value="Maththikula">Maththikula</option><option value="Mathyakula">Mathyakula</option><option value="Mathyasakula">Mathyasakula</option><option value="Mithunakula">Mithunakula</option><option value="Monukula">Monukula</option><option value="Moolakula">Moolakula</option><option value="Morkkalakula">Morkkalakula</option><option value="Moruka">Moruka</option><option value="Morusa">Morusa</option><option value="Mounjikula">Mounjikula</option><option value="Mounjrisa">Mounjrisa</option><option value="Mrangamakula">Mrangamakula</option><option value="Munikula">Munikula</option><option value="Munjeekula">Munjeekula</option><option value="Muthukula">Muthukula</option><option value="Naabeelakula">Naabeelakula</option><option value="Naabeelasakula">Naabeelasakula</option><option value="Naabilla">Naabilla</option><option value="Padanasishtakula">Padanasishtakula</option><option value="Padinakula">Padinakula</option><option value="Padmashreshta">Padmashreshta</option><option value="Padmasishtakula">Padmasishtakula</option><option value="Padmasishtasa">Padmasishtasa</option><option value="Padugoseela">Padugoseela</option><option value="Paipikula">Paipikula</option><option value="Palakakula">Palakakula</option><option value="Palakalakula">Palakalakula</option><option value="Palakula">Palakula</option><option value="Pallalagooseela">Pallalagooseela</option><option value="Pampaalla">Pampaalla</option><option value="Pamthakula">Pamthakula</option><option value="Panchalakula">Panchalakula</option><option value="Panchallakula">Panchallakula</option><option value="Patakaseelakula">Patakaseelakula</option><option value="Pathasishtakula">Pathasishtakula</option><option value="Paththasishtakula">Paththasishtakula</option><option value="Pattugoseela">Pattugoseela</option><option value="Pendlikula">Pendlikula</option><option value="Perusishta">Perusishta</option><option value="Pippalakula">Pippalakula</option><option value="Plakakula">Plakakula</option><option value="Poulathathsya Kula">Poulathathsya Kula</option><option value="Praheenikula">Praheenikula</option><option value="Praheenukula">Praheenukula</option><option value="Prahtamakula">Prahtamakula</option><option value="Prana Seela Kula">Prana Seela Kula</option><option value="Pranaseelakula">Pranaseelakula</option><option value="Pranuseelakula">Pranuseelakula</option><option value="Pravathakula">Pravathakula</option><option value="Prodajakula">Prodajakula</option><option value="Prodayasakula">Prodayasakula</option><option value="Proudaayaja">Proudaayaja</option><option value="Pruthivisishta">Pruthivisishta</option><option value="Pruthivisreshta">Pruthivisreshta</option><option value="Puchakaseela">Puchakaseela</option><option value="Puchakula">Puchakula</option><option value="Punagorseela">Punagorseela</option><option value="Punagoseela">Punagoseela</option><option value="Punakaseelakula Bheemagoseela">Punakaseelakula Bheemagoseela</option>
+                        <option value="Puneethasa">Puneethasa</option><option value="Punitha">Punitha</option><option value="Punthakula">Punthakula</option><option value="Puppalakula">Puppalakula</option><option value="Puthuruksakula">Puthuruksakula</option><option value="Puthurukula">Puthurukula</option><option value="Ravisishtakula">Ravisishtakula</option><option value="Rendukula">Rendukula</option><option value="Rentakula">Rentakula</option><option value="Sakallakula">Sakallakula</option><option value="Samanakula">Samanakula</option><option value="Samasishtakula">Samasishtakula</option><option value="Sanakula">Sanakula</option><option value="Sanasishta">Sanasishta</option><option value="Sanasishtakula">Sanasishtakula</option><option value="Sandhoku">Sandhoku</option><option value="Sandhokulakula">Sandhokulakula</option><option value="Sanikthakula">Sanikthakula</option><option value="Sannakula">Sannakula</option><option value="Santhakula">Santhakula</option><option value="Santhanakula">Santhanakula</option><option value="Sarakula">Sarakula</option><option value="Sathyagoseela">Sathyagoseela</option><option value="Segolla">Segolla</option><option value="Sekotlakula">Sekotlakula</option><option value="Shanakula">Shanakula</option><option value="Shreshta Kundala Kula">Shreshta Kundala Kula</option><option value="Silakula">Silakula</option><option value="Sinishetla">Sinishetla</option><option value="Sirasishtakula">Sirasishtakula</option><option value="Sirisheshta">Sirisheshta</option><option value="Sirisheshtakula">Sirisheshtakula</option><option value="Sirisishtakula">Sirisishtakula</option><option value="Sishtasa">Sishtasa</option><option value="Sithruba">Sithruba</option><option value="Sithrubakula">Sithrubakula</option><option value="Sithrubellu">Sithrubellu</option><option value="Sithurubellu">Sithurubellu</option><option value="Soochalakula">Soochalakula</option><option value="Sookasallakula">Sookasallakula</option><option value="Sooryakula">Sooryakula</option><option value="Soosalakula">Soosalakula</option><option value="Sribhumsikula">Sribhumsikula</option><option value="Srigoseela">Srigoseela</option><option value="Srilakula">Srilakula</option><option value="Srirangakula">Srirangakula</option><option value="Srisalakula">Srisalakula</option><option value="Srisalla">Srisalla</option><option value="Srisallakula">Srisallakula</option><option value="Srishi">Srishi</option><option value="Suchalakula">Suchalakula</option><option value="Sugollakula">Sugollakula</option><option value="Sukalakula">Sukalakula</option><option value="Thaisettakula">Thaisettakula</option><option value="Thanaku">Thanaku</option><option value="Thananakula">Thananakula</option><option value="Thanathakula">Thanathakula</option><option value="Theeshmakula">Theeshmakula</option><option value="Theeshmashreshta">Theeshmashreshta</option><option value="Theeshmasishtakula">Theeshmasishtakula</option><option value="Thenthasala">Thenthasala</option><option value="Thenthsula">Thenthsula</option><option value="Thenukula">Thenukula</option><option value="Thesetlakula">Thesetlakula</option><option value="Thesishtakula">Thesishtakula</option><option value="Thethanakula">Thethanakula</option><option value="Thishamasishtakula">Thishamasishtakula</option><option value="Thithinakula">Thithinakula</option><option value="Thithisa">Thithisa</option><option value="Thondikula">Thondikula</option><option value="Thrimula">Thrimula</option><option value="Thrimulakula">Thrimulakula</option><option value="Thrivikrama">Thrivikrama</option><option value="Thrivikramasishtakula">Thrivikramasishtakula</option><option value="Thuppala">Thuppala</option><option value="Thuppalakula">Thuppalakula</option><option value="Thysishtakula">Thysishtakula</option><option value="Ubarisishta">Ubarisishta</option><option value="Udhvahakula">Udhvahakula</option><option value="Uhtamakula">Uhtamakula</option><option value="Upalakula">Upalakula</option><option value="Upamakula">Upamakula</option><option value="Upamanyakula">Upamanyakula</option><option value="Upanakula">Upanakula</option><option value="Uparakula">Uparakula</option><option value="Usirakula">Usirakula</option><option value="Uthakalakula">Uthakalakula</option><option value="Uthakula">Uthakula</option><option value="Uthamagoseela">Uthamagoseela</option><option value="Uthamaseela">Uthamaseela</option><option value="Uthasishtakula">Uthasishtakula</option><option value="Vaeligolla">Vaeligolla</option><option value="Vanisishtakula">Vanisishtakula</option><option value="Vasanthakula">Vasanthakula</option><option value="Vasntha">Vasntha</option><option value="Vasthi">Vasthi</option><option value="Vasthikula">Vasthikula</option><option value="Vasthisa">Vasthisa</option><option value="Vasthrikula">Vasthrikula</option><option value="Velasishtakula">Velasishtakula</option><option value="Velgolla">Velgolla</option><option value="Velisishtakula">Velisishtakula</option><option value="Venkalakula">Venkalakula</option><option value="Vennakula">Vennakula</option><option value="Vibarisishta">Vibarisishta</option><option value="Vikramasishta">Vikramasishta</option><option value="Vikramasishtakula">Vikramasishtakula</option><option value="Vinnakula">Vinnakula</option><option value="Vinnasa">Vinnasa</option><option value="Vinukula">Vinukula</option><option value="Vrahasishtakula">Vrahasishtakula</option><option value="Vrakalamula">Vrakalamula</option><option value="Vrangamakula">Vrangamakula</option><option value="Vrangamulakula">Vrangamulakula</option><option value="Vyalakoolasa">Vyalakoolasa</option><option value="Yaanasabikula">Yaanasabikula</option><option value="Yaanasakakula">Yaanasakakula</option><option value="Yalamanchikula">Yalamanchikula</option><option value="Yanasakula">Yanasakula</option><option value="Yelasishtakula">Yelasishtakula</option>
+                    		</select> </div>
+                  </div>
+                     <div class="form-row">
+                   <div class="form-group col-md-4">
+                    <label for="timeofbirth">Birth time</label>
+                    <input type="time" autocomplete="off" id="timeofbirth" name="timeofbirth" class=" form-control" placeholder="Enter the birth time" >
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="birthplace">Birth place</label>
+                    <input type="text" autocomplete="off" id="birthplace" name="birthplace" class=" form-control" placeholder="Enter the birth place">
+                   </div>
+                </div>
+            
+                 <div class="form-row">
+                   <div class="form-group col-md-4">
+                    <label for="state">State</label>
+                    <input type="text" autocomplete="off" class="form-control" name="state"  placeholder="Enter the State" required>
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="City">City</label>
+                    <input type="text" autocomplete="off" class="form-control" name="city" placeholder="Enter the city" required>
+                   </div>
+                </div>
+                <div class="form-row">
+                  <div class="form-group col-md-4">
+                    <label for="dosham"> Dosham</label>
+                    <select class="form-control dropdown" id="dosham" name="dosham">    
+                         <option value="yes">Yes</option> 
+                         <option value="no">No</option> 
+                        </select> 
+                    </div>
+                   <div class="form-group col-md-4">
+                    <label for="ownhome">Own house</label>
+                     <select class="form-control dropdown" id="ownhome" name="ownhome">    
+                         <option value="yes">yes</option> 
+                         <option value="no">no</option> 
+                        
+                        </select> 
+                    </div>
+                  </div>
+                  <div class="form-row">
+                     <div class="form-group col-md-4">
+                    <label for="occ"> Occupation</label>
+                    <input type="text" autocomplete="off" class="form-control" name="occupation" placeholder="Enter occupation" required>
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="income1">Annual income ( in lakhs) </label>
+                       <select class="form-control dropdown" id="income" name="income">    
+                         <option value="1-3LPA">1-3LPA</option> 
+                         <option value="3-5LPA">3-5LPA</option> 
+                         <option value="5-10LPA">5-10LPA</option>
+                         <option value="Above 10LPA">above 10LPA</option> 
+                        </select>
+                   </div>
+                </div>
+                 <div class="form-row">
+                   <div class="form-group col-md-4" >
+                      <label for="educational qualification">Educational qualification </label>
+                       <select class="form-control dropdown" id="education" name="education" required>   
+                         <option value="HSC">HSC</option> 
+                         <option value="Diploma">Diploma</option>  
+                         <option value="UG">UG</option> 
+                         <option value="PG">PG</option> 
+                         <option value="Doctorate">Doctrate</option>
+                         <option value="No education">No education</option> 
+                        </select> 
+                    </div>
+                   <div class="form-group col-md-4">
+                    <label for="name1">Father's name</label>
+                    <input type="text" autocomplete="off" class="form-control" name="fathername" placeholder="Enter the Father's name" required>
+                   </div>
+                </div>
+                <div class="form-row">      
+                  <div class="form-group col-md-4">
+                    <label for="fatheroccp">Father's  occupation</label>
+                    <input type="text" autocomplete="off" class="form-control" name="fatheroccp" id="fatheroccp"placeholder="Enter the Father's occupation " required>
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="name2">Mother's name</label>
+                    <input type="text" autocomplete="off" id=""class="form-control" name="mothername"  placeholder="Enter the mother's name" required>
+                   </div>
+                </div>
+                 <div class="form-row">      
+                  <div class="form-group col-md-4">
+                    <label for="motheroccp">Mother's  occupation</label>
+                    <input type="text" autocomplete="off" class="form-control" name="motheroccp" id="motheroccp" placeholder="Enter the  mother's occupation " required>
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="name2">Number of siblings</label>
+                    <input type="text" autocomplete="off" class="form-control" name="siblings" id="siblings" placeholder="No of siblings" required>
+                   </div>
+                </div>
+                <div class="form-row">
+                   <div class="form-group col-md-4">
+                    <label for="pcontact">Primary contact number</label>
+                    <input type="text" class="form-control" id="pcontact" name="pcontact"placeholder="Enter the number" required>
+                   </div>
+                   <div class="form-group col-md-4">
+                    <label for="scontact">Secondary contact number</label>
+                    <input type="text" autocomplete="off" id="scontact" class="form-control" name="scontact" placeholder="Enter the number" required>
+                   </div>
+                </div>-->
+                <div class="form-row">
+                    <div class="form-group col-md-4">
+                     <label for="email">Enter email</label>
+                     <input type="email" class="form-control" id="email" name="email"placeholder="Enter the email" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                     <label for="password">Enter password</label>
+                     <input type="password" autocomplete="off" id="password" class="form-control" name="password" placeholder="Enter the password" required>
+                    </div>
+                 </div>
+
+                  <div class="form-row">
+                    <div class="form-group col-md-4">
+                     <label for="photo">Choose you photo (only jpeg,png)</label>
+                     <input type="file" class="form-control" id="photo" name="photo"placeholder="Choose your photo" required>
+                    </div>
+                    <div class="form-group col-md-4">
+                     <label for="horoscope">Choose horoscope (only jpeg,png)</label>
+                     <input type="file" autocomplete="off" id="horoscope" class="form-control" name="horoscope" placeholder="Choose horoscope">
+                    </div>
+                 </div>
+
+               <button class="btn btn-primary" type="submit" name="submit">submit</button>
+              </div>
+                
+              
+                   
+            
+            </form>
+    </body>
+</html>
